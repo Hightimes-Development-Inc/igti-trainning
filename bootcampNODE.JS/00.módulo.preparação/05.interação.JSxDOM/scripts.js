@@ -64,17 +64,17 @@ document.addEventListener("mouseup", terminaArraste);
 
 function iniciaArrate(evt) {
   //caixa.className = "arrastando";
-  var cx = evt.clientX - pxParaNum(caixa.style.left);
-  var cy = evt.clientY - pxParaNum(caixa.style.top);
+  cx = evt.clientX - pxParaNum(caixa.style.left);
+  cy = evt.clientY - pxParaNum(caixa.style.top);
   caixa.classList.add("arrastando");
   document.addEventListener("mousemove", arrasta);
-};
+}
 
 function terminaArraste(evt) {
   //caixa.className = "";
   caixa.classList.remove("arrastando");
   document.removeEventListener("mousemove", arrasta);
-};
+}
 
 function arrasta(evt) {
   var x = evt.clientX;

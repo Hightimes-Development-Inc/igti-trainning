@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Employees</title>
+  </head>
+  <body>
+    <div id="errorMsg"></div>
+    <form>
+      <label for="name">
+        Nome: <input type="text" name="name" id="name" />
+      </label>
+      <label for="salary">
+        Salário: <input type="number" name="salary" id="salary" />
+      </label>
+      <label for="role_id">
+        Função:
+        <select name="role_id" id="role_id"></select>
+      </label>
+      <div>
+        <button type="button" id="bDelete">Excluir</button>
+        <button type="button" id="bCancel">Cancelar</button>
+        <button type="submit" id="bUpdate">Atualizar</button>
+      </div>
+    </form>
+    <ul></ul>
+    <script src="http.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
